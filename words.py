@@ -1,8 +1,8 @@
 import sys
 
-def test():
+def test(x):
     vowels = ['a','A','á','e','E','é','i','I','í','o','O','ó','u','U','ú']
-    file = open(str(sys.argv[1]),'r')
+    file = open(x,'r')
     line = file.readline().strip('\n')
     cont = 0
     vocal = False
@@ -22,5 +22,7 @@ def test():
         line = file.readline().strip('\n')
     file.close()
     print(with3consonants)
+    return with3consonants
 
-test()
+if __name__ == "__main__":
+    test(int(sys.argv[1]))
