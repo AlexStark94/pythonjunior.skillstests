@@ -1,0 +1,8 @@
+arbol
+materia
+piso
+papel
+iris
+cuba
+cara
+adios
